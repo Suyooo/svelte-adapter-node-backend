@@ -1,6 +1,6 @@
 {
 	"name": "svelte-adapter-node-backend",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Adapter for SvelteKit apps that allows injecting additional services into adapter-node's server instance",
 	"type": "module",
 	"exports": {
@@ -13,9 +13,6 @@
 			"types": "./plugin.d.ts"
 		},
 		"./package.json": "./package.json"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
@@ -33,6 +30,6 @@
 	},
 	"homepage": "https://github.com/suyooo/svelte-adapter-node-backend#readme",
 	"dependencies": {
-		"@sveltejs/adapter-node": "^4.0.1"
+		"@sveltejs/adapter-node": "^5.0.1"
 	}
 }
