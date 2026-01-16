@@ -17,7 +17,7 @@ export default function (options = {}) {
 			// The adapter can then import and call the module
 			if (env.command === "build") {
 				/* @ts-ignore - svelte-vite-plugin-setup is creating this object for sure */
-				config.build.rollupOptions.input["backend"] = "$lib/server/index.ts";
+				config.build.rollupOptions.input["backend"] = entryPoint;
 			}
 			return config;
 		},
