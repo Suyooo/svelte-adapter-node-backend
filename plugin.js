@@ -6,6 +6,7 @@ import { BACKEND_OPTIONS_DEFAULTS } from "./shared.js";
  */
 export default function (options = {}) {
 	const { entryPoint = BACKEND_OPTIONS_DEFAULTS.entryPoint } = options;
+	/** @type (() => void) | undefined */
 	let lastStopBackend = undefined;
 
 	return {
