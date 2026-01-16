@@ -15,7 +15,7 @@ export default function (options = {}) {
 		config: (config, env) => {
 			// In build mode, add the backend as an entrypoint, so the regular build process catches it
 			// The adapter can then import and call the module
-			if (env.command === "build") {
+			if (env.command === "build" && config.build?.ssr) {
 				/* @ts-ignore - svelte-vite-plugin-setup is creating this object for sure */
 				config.build.rollupOptions.input["backend"] = entryPoint;
 			}
